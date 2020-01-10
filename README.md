@@ -12,9 +12,9 @@ Chrome/Firefox/Safari
 ## Note
 This example can only be used for LAN testing. If you need to use it in a production environment, you need more testing and and deploy an available turn server.
 
-## screenshots
-# iOS/Android
-<img width="180" height="320" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/ios-01.jpeg"/> <img width="180" height="320" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/ios-02.jpeg"/> <img width="180" height="320" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/android-01.png"/> <img width="180" height="320" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/android-02.png"/>
 
-# PC/HTML5
-<img width="360" height="293" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/chrome-01.png"/> <img width="360" height="293" src="https://raw.githubusercontent.com/cloudwebrtc/flutter-webrtc-server/master/screenshots/chrome-02.png"/>
+## Run in docker
+#### Create a docker image
+`docker build -t singtao/webrtc_server:1.0 .`
+#### Run docker image
+`docker run -p 8086:8086 -p 4443:4443 -p 4442:4442 -d singtao/webrtc_server:1.0`
