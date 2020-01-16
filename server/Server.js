@@ -190,6 +190,7 @@ export default class CallHandler {
                                     media: message.media,
                                     session_id: message.session_id,
                                     description: message.description,
+                                    invite: message.invite
                                 }
                             }
                             _send(peer, JSON.stringify(msg));
