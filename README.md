@@ -17,4 +17,6 @@ This example can only be used for LAN testing. If you need to use it in a produc
 #### Create a docker image
 `docker build -t singtao/webrtc_server:1.0 .`
 #### Run docker image
-`docker run -p 8086:8086 -p 4443:4443 -p 4442:4442 -d singtao/webrtc_server:1.0`
+`docker run -p 8086:8086 -p 4443:4443 -p 4442:4442 --name webrtc-server -d singtao/webrtc_server:1.0`
+#### Set auto restart
+`docker update --restart=always webrtc-server
