@@ -7,7 +7,6 @@ Chrome/Firefox/Safari
 ## Usage
 - Clone the repository, run `npm install`.  
 - Run `npm start` and open https://your_sever_ip_or_domain:8086 to use html5 demo. 
-- If you need to test mobile app, please check the [webrtc-flutter-demo](https://github.com/cloudwebrtc/flutter-webrtc-demo). 
 
 ## Note
 This example can only be used for LAN testing. If you need to use it in a production environment, you need more testing and and deploy an available turn server.
@@ -19,4 +18,11 @@ This example can only be used for LAN testing. If you need to use it in a produc
 #### Run docker image
 `docker run -p 8086:8086 -p 4443:4443 -p 4442:4442 --name webrtc-server -d singtao/webrtc_server:1.0`
 #### Set auto restart
-`docker update --restart=always webrtc-server
+`docker update --restart=always webrtc-server`
+#### Restart server
+`docker restart webrtc-server`
+#### Stop server
+`docker stop webrtc-server`
+#### Remove docker container
+`docker rm webrtc-server`
+
